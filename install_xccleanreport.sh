@@ -13,7 +13,7 @@ OUT_ZIP="xccleanreport.zip"
 printf "Downloading xccleanreport $VERSION\n"
 
 printf "Updated."
-CURL=$(curl -L -s -w "%{http_code}" -o $OUT_ZIP https://github.com/laurenshultz62/XCCleanReport/master/xccleanreport-$VERSION.zip)
+CURL=$(curl -L -s -w "%{http_code}" -o $OUT_ZIP https://raw.githubusercontent.com/laurenshultz62/XCCleanReport/master/xccleanreport-$VERSION.zip)
 
 if [ ! -f $OUT_PATH ]; then
 printf '\e[1;31m%-6s\e[m' "Failed to download XCCleanReport. Make sure the version you're trying to download exists."
