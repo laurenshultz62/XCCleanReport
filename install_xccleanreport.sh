@@ -12,7 +12,7 @@ OUT_ZIP="xccleanreport.zip"
 
 printf "Downloading xccleanreport $VERSION\n"
 
-
+printf "Updated."
 CURL=$(curl -L -s -w "%{http_code}" -o $OUT_ZIP https://github.com/laurenshultz62/XCCleanReport/master/xccleanreport-$VERSION.zip)
 
 if [ ! -f $OUT_PATH ]; then
